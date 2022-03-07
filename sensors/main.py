@@ -13,7 +13,7 @@ try:
     sensor_dht = DHT11(Pin(4))
     sensor_csms = ADC(Pin(34))
     try:
-        sensor_light = BH1750(I2C(1,scl=Pin(22),sda=Pin(21)))
+        sensor_light = BH1750(I2C(1,scl=Pin(5),sda=Pin(18)))
         sensor_light.on()
     except Exception as e:
         print('Light sensor not detected!')
