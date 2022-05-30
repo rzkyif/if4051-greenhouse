@@ -8,6 +8,7 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe("if4051-5-humidity-air")
     client.subscribe("if4051-5-light")
     client.subscribe("if4051-5-image")
+    client.subscribe("if4051-5-tds")
 
 def on_message(client, userdata, msg):
     sensor = msg.topic[9:]

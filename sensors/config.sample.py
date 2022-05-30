@@ -11,6 +11,7 @@ mqtt_config = {
     'topic_humidity_air': b'if4051-5-humidity-air',
     'topic_humidity_ground': b'if4051-5-humidity-ground',
     'topic_light': b'if4051-5-light',
+    'topic_tds': b'if4051-5-tds',
 }
 
 wifi_config = {
